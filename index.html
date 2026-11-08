@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Городская среда — Саратов</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="design-overrides.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Городская среда — на главную"><span class="brand-mark">С</span><span>Городская<br><b>среда</b></span></a>
+      <nav aria-label="Основная навигация"><a href="#about">О платформе</a><a href="#survey">Опрос</a><a href="#analytics">Аналитика</a></nav>
+      <button class="ghost-btn" data-scroll="#survey">Оценить город <span>→</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-backdrop"><img class="city-image" src="city-illustration.svg" alt="Силуэт Саратова и моста через Волгу"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Исследование городской среды · 2025</div>
+          <h1>Саратов</h1>
+          <div class="hero-rule"></div>
+          <p class="lead">Город, который мы создаём вместе. Оцените качество городской инфраструктуры и помогите определить приоритеты развития.</p>
+          <div class="hero-actions"><button class="primary-btn" data-scroll="#survey">Пройти опрос <span>→</span></button><button class="text-btn" data-scroll="#analytics">Смотреть результаты</button></div>
+        </div>
+        <div class="hero-bottom"><div class="hero-meta"><div><strong id="respondents">1 248</strong><span>участников</span></div><div><strong>6</strong><span>направлений</span></div><div><strong>4,1 <small>/ 5</small></strong><span>средняя оценка</span></div></div><a class="hero-scroll" href="#about" aria-label="Перейти к содержимому"><span>Листайте ниже</span><b>↓</b></a></div>
+      </div>
+    </section>
+
+    <section id="about" class="section soft reveal"><div class="container"><div class="section-head"><div><div class="eyebrow">О платформе</div><h2>Что мы исследуем</h2></div><p>Оценка основана на реальном опыте жителей Саратова и помогает определить приоритеты развития городской инфраструктуры.</p></div><div class="topic-grid"><article class="reveal"><span class="topic-icon">▣</span><h3>Транспорт</h3><p>Общественный транспорт, маршруты и остановки</p></article><article class="reveal"><span class="topic-icon">⌁</span><h3>Дороги</h3><p>Состояние дорожного покрытия и тротуаров</p></article><article class="reveal"><span class="topic-icon">✦</span><h3>Благоустройство</h3><p>Парки, дворы, набережные и общественные пространства</p></article><article class="reveal"><span class="topic-icon">☼</span><h3>Безопасность</h3><p>Освещение улиц и ощущение безопасности</p></article></div></div></section>
+
+    <section id="survey" class="section reveal"><div class="container survey-layout"><div class="survey-intro"><div class="eyebrow">Ваше мнение</div><h2>Оцените Саратов</h2><p>Опрос займёт около 2 минут. Поставьте оценку от 1 до 5 по каждому направлению.</p><div class="progress-wrap"><div class="progress-label"><span>Прогресс опроса</span><b id="progressText">0 из 6</b></div><div class="progress"><span id="progressBar"></span></div></div></div><form id="surveyForm" class="survey-form"><div id="questions"></div><div class="form-footer"><label class="select-label">Ваш район<select id="district"><option>Выберите район</option><option>Волжский</option><option>Октябрьский</option><option>Фрунзенский</option><option>Ленинский</option><option>Заводской</option><option>Кировский</option></select></label><button class="primary-btn" type="submit">Отправить оценку <span>→</span></button></div><p id="formMessage" class="form-message"></p></form></div></section>
+
+    <section id="analytics" class="section soft reveal"><div class="container"><div class="section-head"><div><div class="eyebrow">Открытая аналитика</div><h2>Как жители оценивают город</h2></div><div class="analytics-actions"><label class="filter-label">Район<select id="analyticsDistrict"><option value="Все районы">Все районы</option><option>Волжский</option><option>Октябрьский</option><option>Фрунзенский</option><option>Ленинский</option><option>Заводской</option><option>Кировский</option></select></label></div></div><div class="analytics-summary"><span id="filterStatus">Показаны данные по всем районам</span><span>Данные обновлены сегодня</span></div><div class="analytics-grid"><div class="chart-card reveal"><div class="card-title"><h3>Средняя оценка по направлениям</h3><span class="legend"><i></i> оценка из 5</span></div><div id="bars" class="bars"></div></div><div class="score-card reveal"><span class="score-caption">Общий индекс</span><strong id="overallScore">4,1</strong><div class="stars">★★★★★</div><p>на основе <b id="answerCount">1 248</b> ответов</p><div class="score-note"><span>↑</span> 0,3 за последний месяц</div></div></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2025 «Городская среда»</span><span>Исследование качества городской инфраструктуры Саратова</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<title id="title">Силуэт Саратова на берегу Волги</title><desc id="desc">Декоративная иллюстрация городской набережной и моста</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3c6a7"/><stop offset=".55" stop-color="#e9a889"/><stop offset=".56" stop-color="#75aaa5"/><stop offset="1" stop-color="#1f6868"/></linearGradient><linearGradient id="glow"><stop stop-color="#ffd49e" stop-opacity=".9"/><stop offset="1" stop-color="#f2a274" stop-opacity="0"/></linearGradient></defs>
+<rect width="900" height="520" fill="url(#sky)"/><circle cx="700" cy="125" r="66" fill="url(#glow)"/><path fill="#234f4d" d="M0 333h78l22-43h34l22 43h47l15-75h49l16 75h35l12-117h62l11 117h48l25-63h48l16 63h62l11-92h53l15 92h55l22-53h42l23 53h83v187H0z" opacity=".92"/>
+<path fill="#174e4a" d="M0 385h900v135H0z"/><path fill="none" stroke="#9ad0c5" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 31" d="M20 432h860M80 470h740" opacity=".45"/>
+<path fill="none" stroke="#315e59" stroke-width="11" d="M0 346h900"/><g fill="none" stroke="#315e59" stroke-width="8"><path d="M95 346c0-128 150-128 150 0M300 346c0-128 150-128 150 0M505 346c0-128 150-128 150 0M710 346c0-128 150-128 150 0"/></g>
+<path fill="none" stroke="#d5eee4" stroke-width="3" opacity=".5" d="M0 405c100-15 170 17 270 0s170 17 270 0 170 17 360 0"/>
+</svg>
